@@ -22,19 +22,26 @@ namespace Lab1.Office
 
         public virtual void Work()
         {
+            Say("Starting working");
             Qualification.Work();
+            Say("Ending working");
         }
 
         public void ReceiveSalary(int dollars)
         {
             Console.WriteLine(dollars < Salary
-                ? "I'm sad, the payment is less than my salar."
+                ? "I'm sad, the payment is less than my salary."
                 : "I'm ok, received my salary.");
         }
 
         public void Resign()
         {
             IsActive = false;
+        }
+
+        private void Say(string message)
+        {
+            Console.WriteLine($"{Name} : {message}");
         }
     }
 }

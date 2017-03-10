@@ -23,6 +23,7 @@ namespace KPI.DesignPatterns
             {
                 officeWorker.Work();
                 officeWorker.ReceiveSalary(officeWorker.Salary + (random.Next(3) - 1) * 1000);
+                Console.WriteLine("");
             }
         }
     }
