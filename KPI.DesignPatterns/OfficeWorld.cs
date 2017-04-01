@@ -10,8 +10,10 @@ namespace KPI.DesignPatterns
         private List<OfficeWorker> _workers;
         public OfficeWorld()
         {
-            _workers = new List<OfficeWorker>();
-            _workers.Add(new OfficeWorker("John", 1000, new SystemAdministratorQualification(10)));
+            _workers = new List<OfficeWorker>
+            {
+                new OfficeWorker("John", 1000, new SystemAdministratorQualification(10))
+            };
             _workers.Add(new OfficeWorker("Michmond", 99999, new ManagerQualification(_workers)));
             _workers.Add(new OfficeWorker("Christian", 99999999, new DirectorQualification()));
         }
