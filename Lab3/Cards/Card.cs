@@ -21,7 +21,7 @@ namespace Lab3.Cards
 
         public override string ToString()
         {
-            return string.Format("Rank: {0}\n Suite: {1}", Rank, Suite);
+            return string.Format("Rank: {0}\nSuite: {1}", Rank, Suite);
         }
     }
 }

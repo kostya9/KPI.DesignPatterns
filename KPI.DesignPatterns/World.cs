@@ -27,11 +27,10 @@ namespace KPI.DesignPatterns
             {
                 Console.WriteLine("Type in the number of the lab you want to start");
                 var numebrText = Console.ReadLine();
-                Assembly assembly;
                 try
                 {
                     var number = int.Parse(numebrText);
-                    assembly = Assembly.Load(new AssemblyName($"Lab{number}"));
+                    Assembly.Load(new AssemblyName($"Lab{number}"));
                 }
                 catch
                 {
