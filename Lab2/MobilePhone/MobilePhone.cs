@@ -6,11 +6,11 @@ namespace Lab2.MobilePhone
 {
     public class MobilePhone
     {
-        private Alarm _alarm;
-        private Camera _camera;
-        private Light _light;
-        private Player _player;
-        private Radio _radio;
+        private readonly Alarm _alarm;
+        private readonly Camera _camera;
+        private readonly Light _light;
+        private readonly Player _player;
+        private readonly Radio _radio;
 
         public MobilePhone()
         {
