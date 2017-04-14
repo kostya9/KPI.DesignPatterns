@@ -26,11 +26,7 @@ namespace Lab3.Arrays
             _array.SetValue(value, indeces);
         }
 
-        private static Array CreateArrayFromDimensions(int dimensions)
-        {
-            var lengths = new int[dimensions].Select(i => Length).ToArray();
-            return Array.CreateInstance(typeof(int), lengths);
-        }
+
 
         public void InitializeWithRandom()
         {
@@ -42,11 +38,6 @@ namespace Lab3.Arrays
                 var value = random.Next(max);
                 _array.SetValue(value, indices);
             }
-        }
-
-        public static MultidimensionalArray FromDimensions(int dimensions)
-        {
-            return new MultidimensionalArray(CreateArrayFromDimensions(dimensions));
         }
 
         private int[] GetMultidimensionalIndexFromFlattened(int i)

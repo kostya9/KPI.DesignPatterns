@@ -7,7 +7,7 @@ namespace KPI.DesignPatterns
 {
     class ArraysWorld : World
     {
-        private MultidimensionalArray _array;
+        private readonly MultidimensionalArray _array;
         public ArraysWorld()
         {
             Console.WriteLine("Type in the dimensions");
@@ -25,7 +25,7 @@ namespace KPI.DesignPatterns
                 return;
             }
 
-            _array = MultidimensionalArray.FromDimensions(dimensions);
+            _array = MultidimensionalArrayCreator.FromDimensions(dimensions);
             _array.InitializeWithRandom();
         }
 
