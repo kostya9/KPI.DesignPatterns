@@ -15,7 +15,7 @@ namespace KPI.DesignPatterns
             this._form = new RegistrationForm();
         }
 
-        private string getCheckedSymbol(bool isChecked)
+        private string GetCheckedSymbol(bool isChecked)
         {
             return isChecked ? "*" : "";
         }
@@ -25,21 +25,20 @@ namespace KPI.DesignPatterns
             Console.WriteLine("Type in your registration info, please.");
 
             bool isChecked = CheckedRegistrationInfo.RegistrationForm.IsChecked("UserName");
-            Console.WriteLine($"Type in your username{getCheckedSymbol(isChecked)}, please");
+            Console.WriteLine($"Type in your username{GetCheckedSymbol(isChecked)}, please");
             var userName = Console.ReadLine();
 
             isChecked = CheckedRegistrationInfo.RegistrationForm.IsChecked("Password");
-            Console.WriteLine($"Type in your password{getCheckedSymbol(isChecked)}, please");
+            Console.WriteLine($"Type in your password{GetCheckedSymbol(isChecked)}, please");
             var password = Console.ReadLine();
 
             isChecked = CheckedRegistrationInfo.RegistrationForm.IsChecked("Name");
-            Console.WriteLine($"Type in your name{getCheckedSymbol(isChecked)}, please");
+            Console.WriteLine($"Type in your name{GetCheckedSymbol(isChecked)}, please");
             var name = Console.ReadLine();
 
             isChecked = CheckedRegistrationInfo.RegistrationForm.IsChecked("Age");
-            Console.WriteLine($"Type in your age{getCheckedSymbol(isChecked)}, please");
-            int age;
-            int.TryParse(Console.ReadLine(), out age);
+            Console.WriteLine($"Type in your age{GetCheckedSymbol(isChecked)}, please");
+            int.TryParse(Console.ReadLine(), out int age);
 
             RegistrationInfo info;
 
@@ -47,7 +46,7 @@ namespace KPI.DesignPatterns
             {
                 info = new CheckedRegistrationInfo(userName, password, name, age);
             }
-            catch (ArgumentException e)
+            catch (ArgumentException)
             {
                 Console.WriteLine("Sorry, can't create a user because you did not specify all checked fields");
                 return;

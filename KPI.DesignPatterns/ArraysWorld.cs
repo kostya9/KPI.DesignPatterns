@@ -19,7 +19,7 @@ namespace KPI.DesignPatterns
                 if (dimensions < 1)
                     throw new Exception();
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 WriteError();
                 return;
@@ -63,7 +63,7 @@ namespace KPI.DesignPatterns
                         Array.Copy(commandParts, 1, stringIndexes, 0, stringIndexes.Length);
                         indexes = GetIndexes(stringIndexes);
                     }
-                    catch (Exception e)
+                    catch (Exception)
                     {
                         Console.WriteLine("Sorry, there was an error in your formatting");
                         break;
@@ -74,7 +74,7 @@ namespace KPI.DesignPatterns
                         var value = _array.GetValue(indexes);
                         Console.WriteLine(value);
                     }
-                    catch (Exception e)
+                    catch (Exception)
                     {
                         Console.WriteLine("Incorrect dimensions");
                     }
