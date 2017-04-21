@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.3
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KPI.DesignPatterns", "KPI.DesignPatterns\KPI.DesignPatterns.csproj", "{763ECAC7-F2C9-44A6-9C72-1362F4A41384}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KPI.DesignPatterns", "KPI.DesignPatterns\KPI.DesignPatterns.csproj", "{763ECAC7-F2C9-44A6-9C72-1362F4A41384}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab1", "Lab1\Lab1.csproj", "{E2FCA1F4-4ED7-49A3-8157-D2302846028C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab1", "Lab1\Lab1.csproj", "{E2FCA1F4-4ED7-49A3-8157-D2302846028C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2", "Lab2\Lab2.csproj", "{ECDDFA03-BF46-49FA-A060-A072AAB95930}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab2", "Lab2\Lab2.csproj", "{ECDDFA03-BF46-49FA-A060-A072AAB95930}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab3", "Lab3\Lab3.csproj", "{0F9D0310-81A1-43C8-BA2F-8E7307BF5BAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab3", "Lab3\Lab3.csproj", "{0F9D0310-81A1-43C8-BA2F-8E7307BF5BAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab4", "Lab4\Lab4.csproj", "{C20DB7FE-2FED-4CA6-8D18-C82D0942D4A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,18 @@ Global
 		{0F9D0310-81A1-43C8-BA2F-8E7307BF5BAC}.Release|x64.Build.0 = Release|Any CPU
 		{0F9D0310-81A1-43C8-BA2F-8E7307BF5BAC}.Release|x86.ActiveCfg = Release|Any CPU
 		{0F9D0310-81A1-43C8-BA2F-8E7307BF5BAC}.Release|x86.Build.0 = Release|Any CPU
+		{C20DB7FE-2FED-4CA6-8D18-C82D0942D4A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C20DB7FE-2FED-4CA6-8D18-C82D0942D4A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C20DB7FE-2FED-4CA6-8D18-C82D0942D4A6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C20DB7FE-2FED-4CA6-8D18-C82D0942D4A6}.Debug|x64.Build.0 = Debug|Any CPU
+		{C20DB7FE-2FED-4CA6-8D18-C82D0942D4A6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C20DB7FE-2FED-4CA6-8D18-C82D0942D4A6}.Debug|x86.Build.0 = Debug|Any CPU
+		{C20DB7FE-2FED-4CA6-8D18-C82D0942D4A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C20DB7FE-2FED-4CA6-8D18-C82D0942D4A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C20DB7FE-2FED-4CA6-8D18-C82D0942D4A6}.Release|x64.ActiveCfg = Release|Any CPU
+		{C20DB7FE-2FED-4CA6-8D18-C82D0942D4A6}.Release|x64.Build.0 = Release|Any CPU
+		{C20DB7FE-2FED-4CA6-8D18-C82D0942D4A6}.Release|x86.ActiveCfg = Release|Any CPU
+		{C20DB7FE-2FED-4CA6-8D18-C82D0942D4A6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

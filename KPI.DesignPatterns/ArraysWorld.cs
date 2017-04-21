@@ -31,7 +31,8 @@ namespace KPI.DesignPatterns
 
         protected override void RunIteration()
         {
-            Console.WriteLine("Type in commands : sort, inverse, get {i, j, k, ...}, exit");
+            _array.InitializeWithRandom();
+            Console.WriteLine("Type in commands : sort, inverse, get {i, j, k, ...} (note: the length of all directions is 3), exit");
             string[] commandParts;
             do
             {
