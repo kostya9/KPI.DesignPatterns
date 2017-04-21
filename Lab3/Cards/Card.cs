@@ -12,7 +12,7 @@ namespace Lab3.Cards
         public Card(CardSuite suite)
         {
             Suite = suite;
-        }
+        }   
 
         public Card Clone()
         {
